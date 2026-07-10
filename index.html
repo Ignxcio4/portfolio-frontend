@@ -1,24 +1,30 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <meta
+      name="description"
+      content="Portfolio de Ignacio Barreto, desarrollador Frontend especializado en HTML, CSS y JavaScript."
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio profesional</title>
+    <title>Ignacio Barreto | Frontend Developer</title>
   </head>
   <body>
     <!-- Header -->
 
-    <header>
-      <h1>Ignacio Barreto</h1>
-      <nav>
+    <header class="header">
+      <h1>👋 Hola, soy Ignacio Barreto</h1>
+      <nav class="navbar">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre Mi</a></li>
-          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <button type="button">Contactarme</button>
+      <a class="btn" href="#contacto">Contactarme</a>
     </header>
 
     <!-- Main -->
@@ -26,16 +32,20 @@
     <main>
       <!-- Hero -->
 
-      <section id="inicio">
-        <div>
-          <h1>👋 Hola, soy Ignacio Barreto</h1>
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <p class="logo">Ignacio Barreto</p>
           <!--texto-->
-          <h2>Frontend Developer especializado en desarrollo web</h2>
-          <h2>programador web con experiencia en HTML, CSS y JavaScript</h2>
-          <button type="button">Descargar CV</button>
-          <button type="button">Ver Proyectos</button>
+          <h2>Frontend Developer</h2>
+          <p>
+            Desarrollador Frontend en formación, enfocado en crear sitios web
+            modernos, accesibles y responsivos utilizando HTML, CSS y
+            JavaScript.
+          </p>
+          <button class="btn" href="cv.pdf">Descargar CV</button>
+          <button class="btn" href="#proyectos">Ver Proyectos</button>
         </div>
-        <div>
+        <div class="hero-image">
           <!--imagen-->
           <figure>
             <img src="img/yo.jpg" alt="Foto de Ignacio Barreto" />
@@ -43,18 +53,20 @@
           </figure>
         </div>
       </section>
+
       <!-- Sobre Mi -->
-      <section id="sobre-mi">
+
+      <section id="sobre-mi" class="about-me">
         <h2>Sobre Mi</h2>
         <p>
           Soy un desarrollador web apasionado por crear experiencias digitales
           excepcionales.
         </p>
       </section>
-      <section id="tecnologias">
+      <section id="tecnologias" class="technologies">
         <h2>Tecnologías</h2>
         <p>
-          Estas son algunas de las tecnologias con las que tengo experiencia y
+          Estas son algunas de las tecnologías con las que tengo experiencia y
           otras que estoy aprendiendo para mejorar mis habilidades como
           desarrollador web.
         </p>
@@ -74,7 +86,7 @@
 
           <!-- Card CSS -->
 
-          <article class="tech-cards">
+          <article class="card tech-cards">
             <h3
               title="Lenguaje de estilo para definir la presentación de las páginas web"
             >
@@ -93,7 +105,7 @@
               JavaScript
             </h3>
             <p>Habilidad para implementar funcionalidades interactivas.</p>
-            <p>Nivel: Inicial</p>
+            <p>Nivel Inicial</p>
           </article>
 
           <!-- Card Git -->
@@ -107,7 +119,7 @@
             <p>
               Conocimiento en control de versiones y colaboración en equipo.
             </p>
-            <p>Nivel: Intermedio</p>
+            <p>Nivel Intermedio</p>
           </article>
 
           <!-- Card React -->
@@ -119,7 +131,7 @@
               React
             </h3>
             <p>Experiencia en desarrollo de aplicaciones web con React.</p>
-            <p>Nivel: Inicial</p>
+            <p>Nivel Inicial</p>
           </article>
 
           <!-- Card Node.js -->
@@ -134,12 +146,12 @@
               Capacidad para crear aplicaciones del lado del servidor con
               Node.js.
             </p>
-            <p>Nivel: Inicial</p>
+            <p>Nivel Inicial</p>
           </article>
         </div>
       </section>
 
-      <section id="proyectos">
+      <section id="proyectos" class="projects">
         <h2>Mis Proyectos</h2>
         <p>
           He trabajado en diversos proyectos que demuestran mi habilidad para
@@ -154,30 +166,30 @@
             <p>
               Un portafolio en línea para mostrar mis habilidades y proyectos.
             </p>
-            <p>Tecnologias utilizadas:</p>
+            <p>Tecnologías utilizadas:</p>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">Github del Proyecto</a>
+            <a href="#">Repositorio</a>
             <a href="#">Ver demo del proyecto</a>
           </article>
 
           <!-- Card Proyecto 2 -->
 
-          <article class="cardproject-cards">
+          <article class="card project-cards">
             <h3>Sistemas de gestión para panadería</h3>
             <p>
               Un sistema para gestionar el inventario y ventas de una panadería.
             </p>
-            <p>Tecnologias utilizadas :</p>
+            <p>Tecnologías utilizadas :</p>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">Github del Proyecto</a>
+            <a href="#">Repositorio</a>
             <a href="#">Ver demo del proyecto</a>
           </article>
 
@@ -186,19 +198,19 @@
           <article class="card project-cards">
             <h3>Aplicación de Tareas</h3>
             <p>Una aplicación para gestionar tareas pendientes.</p>
-            <p>Tecnologias utilizadas</p>
+            <p>Tecnologías utilizadas</p>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
             </ul>
-            <a href="#">Github del Proyecto</a>
+            <a href="#">Repositorio</a>
             <a href="#">Ver demo del proyecto</a>
           </article>
         </div>
       </section>
 
-      <section id="experiencia">
+      <section id="experiencia" class="experience">
         <h2>Experiencia</h2>
         <h3>Mi recorrido profesional</h3>
         <p>
@@ -261,103 +273,99 @@
         </div>
       </section>
 
-      <section id="contacto">
-        <form>
-          <h2>Contacto</h2>
+      <section id="contacto" class="contact">
+        <h2>¿Trabajamos juntos?</h2>
+        <p>Completa el formulario y estaré encantado de contactarte.</p>
+
+        <form
+          class="contact-form"
+          action="mailto:ignacioarielbarreto@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
           <fieldset>
-            <legend>Información Personal</legend>
-            <label for="nombre">Nombre:</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Tu nombre"
-              required
-            />
+            <legend>Escribime para poder ayudarte</legend>
 
-            <label for="edad">Edad:</label>
-            <input
-              type="number"
-              id="edad"
-              name="edad"
-              placeholder="Tu edad"
-              required
-            />
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
 
-            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-            <input
-              type="date"
-              id="fecha-nacimiento"
-              name="fecha-nacimiento"
-              required
-            />
+            <div class="form-group">
+              <label for="email">Correo Electrónico:</label>
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                placeholder="Tu correo electrónico"
+                required
+              />
+            </div>
 
-            <label for="email">Correo Electrónico:</label>
-            <input
-              type="email"
-              id="email"
-              name="_replyto"
-              placeholder="Tu correo electrónico"
-              required
-            />
+            <div class="form-group">
+              <label for="asunto">Asunto:</label>
+              <input
+                type="text"
+                id="asunto"
+                name="asunto"
+                placeholder="¿Con qué puedo ayudarte?"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn" type="submit">Enviar</button>
           </fieldset>
-
-          <label for="contrasena">Contraseña:</label>
-          <input
-            type="password"
-            id="contrasena"
-            name="contrasena"
-            placeholder="Tu contraseña"
-            required
-          />
-
-          <label for="confirma-contrasena">Confirma Contraseña:</label>
-          <input
-            type="password"
-            id="confirma-contrasena"
-            name="confirma-contrasena"
-            required
-          />
-
-          <label for="texto">Contanos sobre vos:</label>
-          <textarea id="texto" name="texto" required></textarea>
-
-          <label for="checkbox">
-            <input type="checkbox" id="checkbox" name="checkbox" required />
-            Acepto los términos y condiciones
-          </label>
-
-          <button type="reset">Limpiar formulario</button>
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            placeholder="Tu mensaje"
-            required
-          ></textarea>
-
-          <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
 
     <!-- Footer -->
 
-    <footer>
+    <footer class="footer">
       <p>Ignacio Barreto &copy; 2026</p>
 
-      <a href="https://github.com/Ignxcio4/ignxcio"
-        >Visita mi perfil de: GitHub
-      </a>
-
-      <a href="mailto:ignacioarielbarreto@gmail.com"
-        >Enviame un mensaje a mi correo:
-      </a>
-
-      <a href="https://www.linkedin.com/in/ignacio-barreto-758304231"
-        >Visita mi perfil de: LinkedIn
-      </a>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/Ignxcio4/ignxcio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ignacio-barreto-758304231"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:ignacioarielbarreto@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Correo Electrónico</a
+          >
+        </li>
+      </ul>
 
       <p>Creado con HTML, CSS y JavaScript</p>
     </footer>
