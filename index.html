@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera página</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Ignacio Barreto</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre Mi</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+          </ol>
+          <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+      </nav>
+      <button type="button">Contactarme</button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section id="inicio">
+        <div>
+          <h1>👋 Hola, soy</h1>
+          <!--texto-->
+          <p>Ignacio Barreto</p>
+          <h2>Frontend Developer</h2>
+          <h2>programador web con experiencia en HTML, CSS y JavaScript</h2>
+          <button type="button">Descargar CV</button>
+          <button type="button">Ver Proyectos</button>
+        </div>
+        <div>
+          <!--imagen-->
+          <figure>
+            <img src="img/yo.jpg" alt="Foto de Ignacio Barreto" />
+            <figcaption>Foto de Ignacio Barreto</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- Sobre Mi -->
+      <section id="sobre-mi">
+        <h2>Sobre Mi</h2>
+        <p>
+          Soy un desarrollador web apasionado por crear experiencias digitales
+          excepcionales.
+        </p>
+      </section>
+      <section id="tecnologias">
+        <h2>Tecnologías</h2>
+        <p>
+          Estas son algunas de las tecnologias con las que tengo experiencia y
+          otras que estoy aprendiendo para mejorar mis habilidades como
+          desarrollador web.
+        </p>
+        <!-- Card HTML -->
+        <div class="cards">
+          <h3
+            title="Lenguaje de marcado para estructurar el contenido de las páginas web"
+          >
+            HTML
+          </h3>
+          <p>Experiencia en estructura y semántica de páginas web.</p>
+          <p>Nivel: Avanzado</p>
+        </div>
+        <!-- Card CSS -->
+        <div class="cards">
+          <h3
+            title="Lenguaje de estilo para definir la presentación de las páginas web"
+          >
+            CSS
+          </h3>
+          <p>Capacidad para crear diseños responsivos y atractivos.</p>
+          <p>Nivel: Avanzado</p>
+        </div>
+        <!-- Card JavaScript -->
+        <div class="cards">
+          <h3
+            title="Lenguaje de programación para implementar funcionalidades interactivas en las páginas web"
+          >
+            JavaScript
+          </h3>
+          <p>Habilidad para implementar funcionalidades interactivas.</p>
+          <p>Nivel: Inicial</p>
+        </div>
+        <!-- Card Git -->
+        <div class="cards">
+          <h3
+            title="Sistema de control de versiones para gestionar el desarrollo de software"
+          >
+            Git
+          </h3>
+          <p>Conocimiento en control de versiones y colaboración en equipo.</p>
+          <p>Nivel: Intermedio</p>
+        </div>
+        <!-- Card React -->
+        <div class="cards">
+          <h3
+            title="Librería de JavaScript para desarrollar interfaces de usuario"
+          >
+            React
+          </h3>
+          <p>Experiencia en desarrollo de aplicaciones web con React.</p>
+          <p>Nivel: Inicial</p>
+        </div>
+        <!-- Card Node.js -->
+        <div class="cards">
+          <h3
+            title="Entorno de ejecución para JavaScript del lado del servidor"
+          >
+            Node.js
+          </h3>
+          <p>
+            Capacidad para crear aplicaciones del lado del servidor con Node.js.
+          </p>
+          <p>Nivel: Inicial</p>
+        </div>
+      </section>
+      <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <p>
+          He trabajado en diversos proyectos que demuestran mi habilidad para
+          crear soluciones web innovadoras.
+        </p>
+        <ul>
+          <li>tienda web: tienda para compras on line</li>
+          <li>calculadora: calculadora básica</li>
+          <li>portafolio: portafolio profesional</li>
+        </ul>
+      </section>
+      <section id="contacto">
+        <form>
+          <h2>Contacto</h2>
+          <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+
+            <label for="edad">Edad:</label>
+            <input
+              type="number"
+              id="edad"
+              name="edad"
+              placeholder="Tu edad"
+              required
+            />
+
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input
+              type="date"
+              id="fecha-nacimiento"
+              name="fecha-nacimiento"
+              required
+            />
+
+            <label for="email">Correo Electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="_replyto"
+              placeholder="Tu correo electrónico"
+              required
+            />
+          </fieldset>
+
+          <label for="contrasena">Contraseña:</label>
+          <input
+            type="password"
+            id="contrasena"
+            name="contrasena"
+            placeholder="Tu contraseña"
+            required
+          />
+
+          <label for="confirma-contrasena">Confirma Contraseña:</label>
+          <input
+            type="password"
+            id="confirma-contrasena"
+            name="confirma-contrasena"
+            required
+          />
+
+          <label for="texto">Contanos sobre vos:</label>
+          <textarea id="texto" name="texto" required></textarea>
+
+          <label for="checkbox">
+            <input type="checkbox" id="checkbox" name="checkbox" required />
+            Acepto los términos y condiciones
+          </label>
+
+          <button type="reset">Limpiar formulario</button>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Tu mensaje"
+            required
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>Ignacio Barreto &copy; 2026</p>
+
+      <a href="https://github.com/Ignxcio4/ignxcio"
+        >Visita mi perfil de: GitHub
+      </a>
+
+      <a href="mailto:ignacioarielbarreto@gmail.com"
+        >Enviame un mensaje a mi correo:
+      </a>
+
+      <a href="https://www.linkedin.com/in/ignacio-barreto-758304231"
+        >Visita mi perfil de: LinkedIn
+      </a>
+
+      <p>Creado con HTML, CSS y JavaScript</p>
+    </footer>
+  </body>
+</html>
