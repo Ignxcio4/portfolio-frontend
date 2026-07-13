@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: wheat;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar ul a {
+  display: inline-block;
+  text-decoration: none;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  transition:background-color 0.5s,
+  color 0.5s,
+  transform 0.5s;
+}
+
+.navbar ul a:hover {
+  background-color: darkgreen;
+  color: yellow;
+  transform: scale(1.05);
+}
