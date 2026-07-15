@@ -31,6 +31,7 @@
       </nav>
     </header>
 
+    <main>
       <!-- Hero -->
 
       <section id="inicio" class="hero">
@@ -44,14 +45,17 @@
             JavaScript.
           </p>
           <div class="hero-buttons">
-          <button class="btn-cv" href="cv.pdf">Descargar CV</button>
-          <button class="btn-project" href="#proyectos">Ver Proyectos</button>
+            <button class="btn-cv" href="cv.pdf">Descargar CV</button>
+            <button class="btn-project" href="#proyectos">Ver Proyectos</button>
           </div>
         </div>
         <div class="hero-image">
           <!--imagen-->
           <figure>
-            <img src="./assets/img/foto de perfil.jpg" alt="Foto de Ignacio Barreto" />
+            <img
+              src="./assets/img/foto de perfil.jpg"
+              alt="Foto de Ignacio Barreto"
+            />
             <figcaption>Foto de Ignacio Barreto</figcaption>
           </figure>
         </div>
@@ -59,282 +63,297 @@
 
       <!-- Sobre Mi -->
 
-      <section id="sobre-mi" class="about-me">
-        <h2>Sobre Mi</h2>
-        <p>
-          Soy un desarrollador web apasionado por crear experiencias digitales
-          excepcionales.
-        </p>
-      </section>
-      <section id="tecnologias" class="technologies">
-        <h2>Tecnologías</h2>
-        <p>
-          Estas son algunas de las tecnologías con las que tengo experiencia y
-          otras que estoy aprendiendo para mejorar mis habilidades como
-          desarrollador web.
-        </p>
-
-        <div class="techs-container">
-          <!-- Card HTML -->
-
-          <article class="card tech-cards">
-            <h3
-              title="Lenguaje de marcado para estructurar el contenido de las páginas web"
-            >
-              HTML
-            </h3>
-            <p>Experiencia en estructura y semántica de páginas web.</p>
-            <p>Nivel: Avanzado</p>
-          </article>
-
-          <!-- Card CSS -->
-
-          <article class="card tech-cards">
-            <h3
-              title="Lenguaje de estilo para definir la presentación de las páginas web"
-            >
-              CSS
-            </h3>
-            <p>Capacidad para crear diseños responsivos y atractivos.</p>
-            <p>Nivel: Avanzado</p>
-          </article>
-
-          <!-- Card JavaScript -->
-
-          <article class="card tech-cards">
-            <h3
-              title="Lenguaje de programación para implementar funcionalidades interactivas en las páginas web"
-            >
-              JavaScript
-            </h3>
-            <p>Habilidad para implementar funcionalidades interactivas.</p>
-            <p>Nivel Inicial</p>
-          </article>
-
-          <!-- Card Git -->
-
-          <article class="card tech-cards">
-            <h3
-              title="Sistema de control de versiones para gestionar el desarrollo de software"
-            >
-              Git
-            </h3>
-            <p>
-              Conocimiento en control de versiones y colaboración en equipo.
-            </p>
-            <p>Nivel Intermedio</p>
-          </article>
-
-          <!-- Card React -->
-
-          <article class="card tech-cards">
-            <h3
-              title="Librería de JavaScript para desarrollar interfaces de usuario"
-            >
-              React
-            </h3>
-            <p>Experiencia en desarrollo de aplicaciones web con React.</p>
-            <p>Nivel Inicial</p>
-          </article>
-
-          <!-- Card Node.js -->
-
-          <article class="card tech-cards">
-            <h3
-              title="Entorno de ejecución para JavaScript del lado del servidor"
-            >
-              Node.js
-            </h3>
-            <p>
-              Capacidad para crear aplicaciones del lado del servidor con
-              Node.js.
-            </p>
-            <p>Nivel Inicial</p>
-          </article>
+      <section id="sobre-mi" class="about">
+        <div class="container">
+          <h2 class="section-title">Sobre mí</h2>
+          <p class="section-description">
+            Soy un desarrollador web apasionado por crear experiencias digitales
+            excepcionales.
+          </p>
         </div>
       </section>
 
-      <section id="proyectos" class="projects">
-        <h2>Mis Proyectos</h2>
-        <p>
-          He trabajado en diversos proyectos que demuestran mi habilidad para
-          crear soluciones web innovadoras.
-        </p>
+      <section id="tecnologias" class="technologies">
+        <div class="container">
+          <h2 class="section-title">Tecnologías</h2>
+          <p class="section-description">
+            Estas son algunas de las tecnologías con las que tengo experiencia y
+            otras que estoy aprendiendo para mejorar mis habilidades como
+            desarrollador web.
+          </p>
 
-        <!-- Card Proyecto 1 -->
+          <div class="tech-grid">
+            <!-- Card HTML -->
 
-        <div class="projects-container">
-          <article class="card project-cards">
-            <h3>Portafolio profesional</h3>
-            <p>
-              Un portafolio en línea para mostrar mis habilidades y proyectos.
-            </p>
-            <p>Tecnologías utilizadas:</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo del proyecto</a>
-          </article>
+            <article class="card">
+              <h3
+                title="Lenguaje de marcado para estructurar el contenido de las páginas web"
+              >
+                HTML
+              </h3>
+              <p>Experiencia en estructura y semántica de páginas web.</p>
+              <div class="tech-rating">★★★★☆</div>
+            </article>
 
-          <!-- Card Proyecto 2 -->
+            <!-- Card CSS -->
 
-          <article class="card project-cards">
-            <h3>Sistemas de gestión para panadería</h3>
-            <p>
-              Un sistema para gestionar el inventario y ventas de una panadería.
-            </p>
-            <p>Tecnologías utilizadas :</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo del proyecto</a>
-          </article>
+            <article class="card">
+              <h3
+                title="Lenguaje de estilo para definir la presentación de las páginas web"
+              >
+                CSS
+              </h3>
+              <p>Capacidad para crear diseños responsivos y atractivos.</p>
+              <div class="tech-rating">★★★☆☆</div>
+            </article>
 
-          <!-- Card Proyecto 3 -->
+            <!-- Card JavaScript -->
 
-          <article class="card project-cards">
-            <h3>Aplicación de Tareas</h3>
-            <p>Una aplicación para gestionar tareas pendientes.</p>
-            <p>Tecnologías utilizadas</p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <a href="#">Repositorio</a>
-            <a href="#">Ver demo del proyecto</a>
-          </article>
+            <article class="card">
+              <h3
+                title="Lenguaje de programación para implementar funcionalidades interactivas en las páginas web"
+              >
+                JavaScript
+              </h3>
+              <p>Habilidad para implementar funcionalidades interactivas.</p>
+              <div class="tech-rating">★★☆☆☆</div>
+            </article>
+
+            <!-- Card Git -->
+
+            <article class="card">
+              <h3
+                title="Sistema de control de versiones para gestionar el desarrollo de software"
+              >
+                Git
+              </h3>
+              <p>
+                Conocimiento en control de versiones y colaboración en equipo.
+              </p>
+              <div class="tech-rating">★★☆☆☆</div>
+            </article>
+
+            <!-- Card React -->
+
+            <article class="card">
+              <h3
+                title="Librería de JavaScript para desarrollar interfaces de usuario"
+              >
+                React
+              </h3>
+              <p>Experiencia en desarrollo de aplicaciones web con React.</p>
+              <div class="tech-rating">★★☆☆☆</div>
+            </article>
+
+            <!-- Card Node.js -->
+
+            <article class="card">
+              <h3
+                title="Entorno de ejecución para JavaScript del lado del servidor"
+              >
+                Node.js
+              </h3>
+              <p>
+                Capacidad para crear aplicaciones del lado del servidor con
+                Node.js.
+              </p>
+              <div class="tech-rating">★★☆☆☆</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="project">
+        <div class="container">
+          <h2 class="section-title">Mis Proyectos</h2>
+          <p class="section-description">
+            He trabajado en diversos proyectos que demuestran mi habilidad para
+            crear soluciones web innovadoras.
+          </p>
+
+          <!-- Card Proyecto 1 -->
+
+          <div class="project-grid">
+            <article class="card">
+              <h3>Portafolio profesional</h3>
+              <p>
+                Un portafolio en línea para mostrar mis habilidades y proyectos.
+              </p>
+              <p>Tecnologías utilizadas:</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#">Repositorio</a>
+              <a href="#">Ver demo del proyecto</a>
+            </article>
+
+            <!-- Card Proyecto 2 -->
+
+            <article class="card">
+              <h3>Sistemas de gestión para panadería</h3>
+              <p>
+                Un sistema para gestionar el inventario y ventas de una
+                panadería.
+              </p>
+              <p>Tecnologías utilizadas :</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#">Repositorio</a>
+              <a href="#">Ver demo del proyecto</a>
+            </article>
+
+            <!-- Card Proyecto 3 -->
+
+            <article class="card">
+              <h3>Aplicación de Tareas</h3>
+              <p>Una aplicación para gestionar tareas pendientes.</p>
+              <p>Tecnologías utilizadas</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="#">Repositorio</a>
+              <a href="#">Ver demo del proyecto</a>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="experiencia" class="experience">
-        <h2>Experiencia</h2>
-        <h3>Mi recorrido profesional</h3>
-        <p>
-          Mi experiencia en gastronomía y hotelería me permitió desarrollar
-          habilidades como atención al cliente, trabajo en equipo, organización
-          y resolución de problemas. Actualmente complemento esa experiencia con
-          mi formación como desarrollador Frontend, creando proyectos que
-          fortalecen mis conocimientos y mi crecimiento profesional
-        </p>
+        <div class="container">
+          <h2 class="section-title">Experiencia</h2>
+          <h3>Mi recorrido profesional</h3>
+          <p class="section-description">
+            Mi experiencia en gastronomía y hotelería me permitió desarrollar
+            habilidades como atención al cliente, trabajo en equipo,
+            organización y resolución de problemas. Actualmente complemento esa
+            experiencia con mi formación como desarrollador Frontend, creando
+            proyectos que fortalecen mis conocimientos y mi crecimiento
+            profesional
+          </p>
 
-        <div class="experience-container">
-          <!-- Card Experiencie 1 -->
-          <article class="card experience-card">
-            <h3>Mozo | Atención al Cliente</h3>
-            <p><strong>Palma Bistró de playa</strong></p>
-            <time datetime="2024-12">Diciembre 2024</time>
-            -
-            <time datetime="2025-05">Mayo 2025</time>
-            <p>Pinamar, Buenos Aires</p>
-            <p>
-              Palma bistró de playa es un restaurante ubicado en la costa, donde
-              trabajé como mozo atendiendo a los clientes y asegurando una
-              experiencia gastronómica satisfactoria.
-            </p>
-            <ul>
-              <li>Atención al cliente</li>
-              <li>Trabajo en equipo</li>
-              <li>Gestión de pedidos</li>
-              <li>Trabajo bajo presión</li>
-            </ul>
-            <p>
-              Gracias a esta experiencia fortalecí mis habilidades de
-              comunicación, organización y resolución de problemas.
-            </p>
-          </article>
+          <div class="experience-grid">
+            <!-- Card Experiencie 1 -->
+            <article class="card">
+              <h3>Mozo | Atención al Cliente</h3>
+              <p><strong>Palma Bistró de playa</strong></p>
+              <time datetime="2024-12">Diciembre 2024</time>
+              -
+              <time datetime="2025-05">Mayo 2025</time>
+              <p>Pinamar, Buenos Aires</p>
+              <p>
+                Palma bistró de playa es un restaurante ubicado en la costa,
+                donde trabajé como mozo atendiendo a los clientes y asegurando
+                una experiencia gastronómica satisfactoria.
+              </p>
+              <ul>
+                <li>Atención al cliente</li>
+                <li>Trabajo en equipo</li>
+                <li>Gestión de pedidos</li>
+                <li>Trabajo bajo presión</li>
+              </ul>
+              <p>
+                Gracias a esta experiencia fortalecí mis habilidades de
+                comunicación, organización y resolución de problemas.
+              </p>
+            </article>
 
-          <!-- Card Experiencia 2 -->
-          <article class="card experience-card">
-            <h3>Recepcionista | Atención al Huésped</h3>
-            <p><strong>Sol del Nahuel</strong></p>
-            <time datetime="2025-06">Junio 2025</time>
-            <span>- Actualidad</span>
-            <p>San Carlos de Bariloche, Río Negro</p>
-            <p>
-              Sol del Nahuel es un hotel ubicado en la ciudad de Bariloche,
-              donde trabajé como recepcionista atendiendo a los clientes y
-              asegurando una experiencia satisfactoria durante su estadía.
-            </p>
-            <ul>
-              <li>Manejo de WinPax y Maxirest</li>
-              <li>Gestión de reservas</li>
-              <li>Resolución de problemas</li>
-              <li>Trabajo en equipo</li>
-            </ul>
-            <p>
-              Gracias a esta experiencia fortalecí mis habilidades con Winpax y
-              Maxirest y el trabajo en equipo.
-            </p>
-          </article>
+            <!-- Card Experiencia 2 -->
+            <article class="card">
+              <h3>Recepcionista | Atención al Huésped</h3>
+              <p><strong>Sol del Nahuel</strong></p>
+              <time datetime="2025-06">Junio 2025</time>
+              <span>- Actualidad</span>
+              <p>San Carlos de Bariloche, Río Negro</p>
+              <p>
+                Sol del Nahuel es un hotel ubicado en la ciudad de Bariloche,
+                donde trabajé como recepcionista atendiendo a los clientes y
+                asegurando una experiencia satisfactoria durante su estadía.
+              </p>
+              <ul>
+                <li>Manejo de WinPax y Maxirest</li>
+                <li>Gestión de reservas</li>
+                <li>Resolución de problemas</li>
+                <li>Trabajo en equipo</li>
+              </ul>
+              <p>
+                Gracias a esta experiencia fortalecí mis habilidades con Winpax
+                y Maxirest y el trabajo en equipo.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="contacto" class="contact">
-        <h2>¿Trabajamos juntos?</h2>
-        <p>Completa el formulario y estaré encantado de contactarte.</p>
+        <div class="container">
+          <h2 class="section-title">¿Trabajamos juntos?</h2>
+          <p class="section-description">
+            Completa el formulario y estaré encantado de contactarte.
+          </p>
 
-        <form
-          class="contact-form"
-          action="mailto:ignacioarielbarreto@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <fieldset>
-            <legend>Escribime para poder ayudarte</legend>
+          <form
+            class="contact-form"
+            action="mailto:ignacioarielbarreto@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <fieldset>
+              <legend>Escribime para poder ayudarte</legend>
 
-            <div class="form-group">
-              <label for="nombre">Nombre:</label>
-              <input
-                type="text"
-                id="nombre"
-                name="nombre"
-                placeholder="Tu nombre"
-                required
-              />
-            </div>
+              <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
 
-            <div class="form-group">
-              <label for="email">Correo Electrónico:</label>
-              <input
-                type="email"
-                id="email"
-                name="_replyto"
-                placeholder="Tu correo electrónico"
-                required
-              />
-            </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="_replyto"
+                  placeholder="Tu correo electrónico"
+                  required
+                />
+              </div>
 
-            <div class="form-group">
-              <label for="asunto">Asunto:</label>
-              <input
-                type="text"
-                id="asunto"
-                name="asunto"
-                placeholder="¿Con qué puedo ayudarte?"
-                required
-              />
-            </div>
+              <div class="form-group">
+                <label for="asunto">Asunto:</label>
+                <input
+                  type="text"
+                  id="asunto"
+                  name="asunto"
+                  placeholder="¿Con qué puedo ayudarte?"
+                  required
+                />
+              </div>
 
-            <div class="form-group">
-              <label for="mensaje">Mensaje:</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                placeholder="Escribe tu mensaje aquí..."
-                required
-              ></textarea>
-            </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+              </div>
 
-            <button class="btn" type="submit">Enviar</button>
-          </fieldset>
-        </form>
+              <button class="btn" type="submit">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
       </section>
     </main>
 
