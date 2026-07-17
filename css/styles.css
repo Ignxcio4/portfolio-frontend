@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -40,9 +41,11 @@ body {
 
 .navbar ul {
   display: flex;
+  flex-wrap: wrap;
   padding: 20px;
   justify-content: center;
   list-style: none;
+  gap: 10px;
 }
 
 .navbar ul a {
@@ -52,7 +55,6 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 10px;
-  margin: 5px;
   transition:
     background-color 0.5s,
     color 0.5s,
@@ -72,8 +74,9 @@ body {
   min-height: 100vh;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px;
 }
+
 
 .hero-content {
   display: flex;
@@ -124,6 +127,7 @@ body {
   font-weight: 600;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
   transition:
     background-color 0.3s ease,
     transform 0.3s ease;
@@ -171,6 +175,11 @@ body {
   transform: scale(1.02);
 }
 
+.hero-image figure {
+  max-width: 420px;
+  width: 100%;
+}
+
 .about {
   background-color: var(--bg-secondary);
   padding: 20px;
@@ -205,7 +214,7 @@ body {
 .technologies {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  padding: 80px;
+  padding: 80px 20px;
 }
 
 .tech-grid {
@@ -258,7 +267,7 @@ body {
 .project {
   background-color: var(--bg-secondary);
   color: var(--text-primary);
-  padding: 80px;
+  padding: 80px 20px;
 }
 
 .project-grid {
@@ -395,7 +404,7 @@ body {
 .contact {
   background-color: var(--bg-secondary);
   color: var(--text-primary);
-  padding: 80px;
+  padding: 80px 20px;
 }
 
 .contact h2 {
@@ -454,4 +463,90 @@ body {
   font-weight: 600;
 }
 
+.menu-btn {
+  display: none;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
+
+@media (max-width:480px){
+
+  .menu-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+}
+
+
+@media (max-width:480px){
+
+  /* HEADER */
+  .navbar ul{
+    flex-direction:column;
+    align-items:center;
+  }
+
+
+  /* HERO */
+  .hero{
+    flex-direction:column;
+  }
+
+  .hero-content{
+    text-align:center;
+  }
+
+
+  /* TECNOLOGIAS */
+  .tech-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  /* PROYECTOS */
+  .project-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  /* EXPERIENCIA */
+  .experience-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  /* CONTACTO */
+  .contact-btn ul{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .contact {
+    padding: 40px 20px;
+  }
+
+  /* FOOTER */
+  .footer{
+    padding:40px 20px;
+  }
+
+  }
+
+* {
+  outline: 1px solid red;
+}
