@@ -282,7 +282,7 @@
       <section id="experiencia" class="experience">
         <div class="container">
           <h2 class="section-title">Experiencia</h2>
-          <h3>Mi recorrido profesional</h3>
+          <p class="section-subtitle">Mi recorrido profesional</p>
           <p class="section-description">
             Mi experiencia en gastronomía y hotelería me permitió desarrollar
             habilidades como atención al cliente, trabajo en equipo,
@@ -297,24 +297,28 @@
             <article class="card">
               <h3>Mozo | Atención al Cliente</h3>
               <p><strong>Palma Bistró de playa</strong></p>
-              <time datetime="2024-12">Diciembre 2024</time>
-              -
-              <time datetime="2025-05">Mayo 2025</time>
-              <p>Pinamar, Buenos Aires</p>
+              <div class="experience-date">
+                <time datetime="2024-12">Diciembre 2024</time>
+                -
+                <time datetime="2025-05">Mayo 2025</time>
+              </div>
+              <p>📍 Pinamar, Buenos Aires</p>
               <p>
                 Palma bistró de playa es un restaurante ubicado en la costa,
                 donde trabajé como mozo atendiendo a los clientes y asegurando
                 una experiencia gastronómica satisfactoria.
               </p>
-              <ul>
-                <li>Atención al cliente</li>
-                <li>Trabajo en equipo</li>
-                <li>Gestión de pedidos</li>
-                <li>Trabajo bajo presión</li>
-              </ul>
+              <div class="experience-skills">
+                <ul>
+                  <li>Atención al cliente</li>
+                  <li>Trabajo en equipo</li>
+                  <li>Gestión de pedidos</li>
+                  <li>Trabajo bajo presión</li>
+                </ul>
+              </div>
               <p>
-                Gracias a esta experiencia fortalecí mis habilidades de
-                comunicación, organización y resolución de problemas.
+                Fortalecí mis habilidades de comunicación, manejo de clientes y
+                trabajo bajo presión en un entorno gastronómico de alta demanda.
               </p>
             </article>
 
@@ -322,23 +326,27 @@
             <article class="card">
               <h3>Recepcionista | Atención al Huésped</h3>
               <p><strong>Sol del Nahuel</strong></p>
-              <time datetime="2025-06">Junio 2025</time>
-              <span>- Actualidad</span>
-              <p>San Carlos de Bariloche, Río Negro</p>
+              <div class="experience-date">
+                <time datetime="2025-06">Junio 2025</time>
+                <span>- Actualidad</span>
+              </div>
+              <p>📍 San Carlos de Bariloche, Río Negro</p>
               <p>
                 Sol del Nahuel es un hotel ubicado en la ciudad de Bariloche,
                 donde trabajé como recepcionista atendiendo a los clientes y
                 asegurando una experiencia satisfactoria durante su estadía.
               </p>
-              <ul>
-                <li>Manejo de WinPax y Maxirest</li>
-                <li>Gestión de reservas</li>
-                <li>Resolución de problemas</li>
-                <li>Trabajo en equipo</li>
-              </ul>
+              <div class="experience-skills">
+                <ul>
+                  <li>Manejo de WinPax y Maxirest</li>
+                  <li>Gestión de reservas</li>
+                  <li>Resolución de problemas</li>
+                  <li>Trabajo en equipo</li>
+                </ul>
+              </div>
               <p>
-                Gracias a esta experiencia fortalecí mis habilidades con Winpax
-                y Maxirest y el trabajo en equipo.
+                Desarrollé experiencia en atención al huésped, gestión de
+                reservas y uso de sistemas administrativos hoteleros.
               </p>
             </article>
           </div>
@@ -346,67 +354,18 @@
       </section>
 
       <section id="contacto" class="contact">
-        <div class="container">
-          <h2 class="section-title">¿Trabajamos juntos?</h2>
-          <p class="section-description">
-            Completa el formulario y estaré encantado de contactarte.
-          </p>
-
-          <form
-            class="contact-form"
-            action="mailto:ignacioarielbarreto@gmail.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <fieldset>
-              <legend>Escribime para poder ayudarte</legend>
-
-              <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="_replyto"
-                  placeholder="Tu correo electrónico"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="asunto">Asunto:</label>
-                <input
-                  type="text"
-                  id="asunto"
-                  name="asunto"
-                  placeholder="¿Con qué puedo ayudarte?"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  placeholder="Escribe tu mensaje aquí..."
-                  required
-                ></textarea>
-              </div>
-
-              <button class="btn" type="submit">Enviar</button>
-            </fieldset>
-          </form>
+        <h2>Contacto</h2>
+        <p>¿Trabajamos juntos?</p>
+        <p>
+          Actualmente estoy buscando oportunidades donde pueda aportar mis
+          conocimientos y seguir creciendo como desarrollador Frontend.
+        </p>
+        <div class="contact-btn">
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
         </div>
       </section>
     </main>
@@ -414,36 +373,11 @@
     <!-- Footer -->
 
     <footer class="footer">
-      <p>Ignacio Barreto &copy; 2026</p>
-
-      <ul>
-        <li>
-          <a
-            href="https://github.com/Ignxcio4/ignxcio"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/ignacio-barreto-758304231"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a
-            href="mailto:ignacioarielbarreto@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Correo Electrónico</a
-          >
-        </li>
-      </ul>
-
-      <p>Creado con HTML, CSS y JavaScript</p>
+      <p>© 2026 Ignacio Barreto</p>
+      <p class="role">Frontend Developer</p>
+      <p>Construido con HTML, CSS y JavaScript</p>
     </footer>
+
+
   </body>
 </html>
